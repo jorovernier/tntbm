@@ -37,7 +37,7 @@
     },
     {
         "id": 4,
-        "name": "Sweet Preserves",
+        "name": "Savory Preserves",
         "amounts": [
             {"6oz": 3.49},
             {"12oz": 5.99},
@@ -58,5 +58,17 @@
         ],
         "choices": ["White", "Brown", "Blue", "Yellow"],
         "imageURL": "https://images.unsplash.com/photo-1522426197515-ad17e39de88d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2224&q=80"
+    },
+    {
+        "id": 6,
+        "name": "Halloween Decorations",
+        "amounts": [
+            {"1": 7.99},
+            {"2": 14.49},
+            {"4": 24.99},
+            {"10": 48.49}
+        ],
+        "choices": ["Arm", "Leg", "Hand", "Foot"],
+        "imageURL": "https://ae01.alicdn.com/kf/H5ff106dcf2974642a9c2176d81abe170a/Halloween-Fake-Scary-Severed-Hand-Broken-Body-Parts-Simulating-Bloody-Organ-Props-for-Halloween-Vampire-Zombie.jpg_640x640.jpg"
     }
 ]

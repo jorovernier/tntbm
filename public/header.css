@@ -1,0 +1,38 @@
+header {
+    background-color: #344966;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#logo-title {
+    width: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#logo {
+    height: 100px;
+}
+
+#title-link {
+    color: white;
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+#to-cart {
+    background-color: #344966;
+    background-image: url('./images/cart.png');
+    background-size: cover;
+    width: 75px;
+    height: 75px;
+    border: 0px;
+    margin: 20px;
+}

@@ -6,13 +6,13 @@ function getItems(){
             let item = res.data[i]
             let itemCard = document.createElement('div')
             itemCard.setAttribute('id', `item-${item.id}`)
+            itemCard.setAttribute('class', `item-card`)
             itemCard.innerHTML = `
-                <image src='${item.imageURL}'/>
-                <h1 id='title-${item.id}'>${item.name}</h1>
+                <img class='card-img' src='${item.imageURL}'/>
+                <h1 class='card-title' id='title-${item.id}'>${item.name}</h1>
             `
             itemHolder.appendChild(itemCard)
-            let itemName = document.getElementById(`title-${item.id}`)
-            itemName.addEventListener('click', () => {
+            itemCard.addEventListener('click', () => {
                 renderItemInfo(item)
             })
         }
@@ -30,7 +30,7 @@ function renderItemInfo(item){
 
     itemHolder.innerHTML = `
         <div>
-            <image src='${imageURL}'/>
+            <img class='item-img' src='${imageURL}'/>
             <section>
                 <h1>${name}</h1>
 
