@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Completely Normal Fried Chicken",
+        "amounts": [
+            {"4": 8.99},
+            {"10": 12.99},
+            {"16": 18.99},
+            {"20": 24.99}
+        ],
+        "choices": ["white", "dark"],
+        "imageURL": "https://images.unsplash.com/photo-1626082896492-766af4eb6501?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+    },
+    {
+        "id": 2,
+        "name": "Inconspicuous Sushi",
+        "amounts": [
+            {"4": 3.99},
+            {"6": 5.99},
+            {"8": 8.49},
+            {"12": 13.49}
+        ],
+        "choices": ["Cali Roll", "Salmon Roll", "Tuna Roll", "'Meat' Roll"],
+        "imageURL": "https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2050&q=80"
+    },
+    {
+        "id": 3,
+        "name": "'Bagel'",
+        "amounts": [
+            {"1": 1.49},
+            {"2": 2.99},
+            {"4": 4.49},
+            {"6": 5.99}
+        ],
+        "choices": ["Plain", "Everything", "Blueberry", "Cinnamon 'Rasin'"],
+        "imageURL": "https://images.unsplash.com/photo-1610735458851-bf3be7078588?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+    },
+    {
+        "id": 4,
+        "name": "Sweet Preserves",
+        "amounts": [
+            {"6oz": 3.49},
+            {"12oz": 5.99},
+            {"24oz": 11.49},
+            {"32oz": 15.99}
+        ],
+        "choices": ["Chunky Red", "Chunky Pink", "Creamy Red", "Creamy Pink"],
+        "imageURL": "https://images.unsplash.com/photo-1590083052217-3c5ca32f3906?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+    },
+    {
+        "id": 5,
+        "name": "Hard Candy",
+        "amounts": [
+            {"30": 5.99},
+            {"60": 8.49},
+            {"90": 11.99},
+            {"120": 13.49}
+        ],
+        "choices": ["White", "Brown", "Blue", "Yellow"],
+        "imageURL": "https://images.unsplash.com/photo-1522426197515-ad17e39de88d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2224&q=80"
+    }
+]
