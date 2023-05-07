@@ -75,8 +75,16 @@ function renderItemInfo(item){
 
             document.getElementById('price').textContent = `$${amounts[i][keyName]}`
             if(currAmount && currChoice){
+                let toSend = {
+                    id,
+                    name,
+                    amount: currAmount,
+                    choice: currChoice,
+                    price: document.getElementById('price').textContent,
+                    imageURL
+                }
                 document.getElementById('add-to-cart').addEventListener('click',() => {
-                    console.log(item)
+                    addToCart(toSend)
                 })
             }
         })
@@ -115,6 +123,7 @@ function renderItemInfo(item){
                     name,
                     amount: currAmount,
                     choice: currChoice,
+                    price: document.getElementById('price').textContent,
                     imageURL
                 }
                 document.getElementById('add-to-cart').addEventListener('click',() => {

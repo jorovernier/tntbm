@@ -5,9 +5,10 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-const {getItems, addToCart, deleteFromCart} = require('./controller')
+const {getItems, getCart, addToCart, deleteFromCart} = require('./controller')
 
 app.get('/ies/items', getItems)
+app.get('/ies/cart', getCart)
 app.post('/ies/cart', addToCart)
 app.delete('/ies/cart/:id', deleteFromCart)
 
