@@ -7,6 +7,7 @@ module.exports = {
     },
     addToCart: (req, res) => {
         cart.push(req.body)
+        console.log(cart)
         res.sendStatus(200)
     },
     deleteFromCart: (req, res) => {

@@ -42,3 +42,109 @@ body {
     text-align: center;
     margin-bottom: 15px;
 }
+
+/* Selected Item ----------------------------------------------------- */
+
+#clicked-item {
+    width: 80vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#section-section {
+    background-color: #F0F4EF;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#selected-title {
+    color: #0D1821;
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+}
+
+.size-choice {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pee {
+    color: #0D1821;
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+}
+
+.options {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.option {
+    background-color: #BFCC94;
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.choice {
+    width: 120px;
+    margin: 5px;
+}
+
+.option-text {
+    color: #0D1821;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+#price {
+    height: 30px;
+    color: #0D1821;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+}
+
+#add-to-cart {
+    background-color: #BFCC94;
+    width: 200px;
+    height: 75px;
+    color: #0D1821;
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    border-radius: 5px;
+    border: 0px;
+}
