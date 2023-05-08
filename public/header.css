@@ -27,6 +27,10 @@ header {
     text-decoration: none;
 }
 
+#title-link:hover {
+    cursor: pointer;
+}
+
 #to-cart {
     background-color: #344966;
     background-image: url('./images/cart.png');

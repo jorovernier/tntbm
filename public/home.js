@@ -35,12 +35,12 @@ function renderItemInfo(item){
                 <h1 id='selected-title'>${name}</h1>
 
                 <section class='size-choice' id='size-section'>
-                    <p class='pee'>Size Selection</p>
+                    <h2 class='pee'>Size Selection</h2>
                     <div class='options' id='sizes'></div>
                 </section>
 
                 <section class='size-choice' id='choice-section'>
-                    <p class='pee'>Choices</p>
+                    <h2 class='pee'>Choices</h2>
                     <div class='options' id='choices'></div>
                 </section>
 
@@ -73,14 +73,14 @@ function renderItemInfo(item){
             }
             amount.style.boxShadow = "0px 3px 3px 0px grey"
 
-            document.getElementById('price').textContent = `$${amounts[i][keyName]}`
+            document.getElementById('price').textContent = `${amounts[i][keyName]}`
             if(currAmount && currChoice){
                 let toSend = {
                     id,
                     name,
                     amount: currAmount,
                     choice: currChoice,
-                    price: document.getElementById('price').textContent,
+                    price: +document.getElementById('price').textContent,
                     imageURL
                 }
                 document.getElementById('add-to-cart').addEventListener('click',() => {
@@ -97,11 +97,11 @@ function renderItemInfo(item){
         choice.innerHTML = `
             <p class='option-text'>${choices[i]}</p>
         `
-        if(choices[i] === 'white'){
+        if(choices[i] === 'White Meat'){
             choice.innerHTML = ''
             choice.style.backgroundColor = '#FFDEC7'
             choice.style.width = '50px'
-        } else if(choices[i] === 'dark'){
+        } else if(choices[i] === 'Dark Meat'){
             choice.innerHTML = ''
             choice.style.backgroundColor = '#C99494'
             choice.style.width = '50px'
@@ -123,7 +123,7 @@ function renderItemInfo(item){
                     name,
                     amount: currAmount,
                     choice: currChoice,
-                    price: document.getElementById('price').textContent,
+                    price: +document.getElementById('price').textContent,
                     imageURL
                 }
                 document.getElementById('add-to-cart').addEventListener('click',() => {
