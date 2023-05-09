@@ -7,10 +7,9 @@ function getCart(){
         let orderTotal = 0;
 
         for(let i = 0; i < res.data.length; i++){
-            let {id, name, amount, choice, imageURL, price} = res.data[i]
+            let {name, amount, choice, imageURL, price} = res.data[i]
             orderTotal += price
             let cartCard = document.createElement('div')
-            cartCard.setAttribute('id', `cart-${i}`)
             cartCard.setAttribute('class', 'cart-card')
             if(name.split(' ').length > 2){
                 name = name.split(' ').splice(0, 2).join(' ') + '...'
@@ -18,14 +17,14 @@ function getCart(){
             cartCard.innerHTML = `
                 <img class='cart-img' src='${imageURL}'/>
 
-                <h1 class='cart-title'>${name}</h1>
+                <h1 class='cart-title jura'>${name}</h1>
 
                 <div class='cart-a-c'>
-                    <p class='cart-amount'>${amount}pcs</p>
-                    <p class='cart-choice'>${choice}</p>
+                    <p class='jura'>${amount}pcs</p>
+                    <p class='jura'>${choice}</p>
                 </div>
 
-                <p class='cart-price'>${price}</p>
+                <p class='cart-price inter'>${price}</p>
 
                 <button class='delete' id='delete-${i}'>x</button>
             `
@@ -53,10 +52,9 @@ function getCart(){
         oneDay.addEventListener('click', () => {
             if(oneDay.attributes.selected === undefined && cartItems.childElementCount > 0){
                 oneDay.setAttribute('selected', true)
-                console.log(oneDay.attributes)
                 let toAdd = +totalElem.textContent
                 toAdd += 9.99
-                totalElem.textContent = toAdd
+                totalElem.textContent = toAdd.toFixed(2)
             }
         })
 
@@ -69,13 +67,30 @@ function getCart(){
                 totalElem.textContent = toSub.toFixed(2)
             }
         })
+
+        let orderBtn = document.getElementById('finish')
+        orderBtn.addEventListener('click', () => {
+            if(cartItems.childElementCount > 0){
+                finishOrder()
+            } else {
+                alert('Please add items to your cart.')
+            }
+        })
+    })
+}
+
+function deleteFromCart(event){
+    axios.delete(`http://localhost:8008/ies/cart/${event.target.id.split('-')[1]}`).then(() => {
+        document.getElementById('ship-2').removeAttribute('selected')
+        getCart()
+    })
+}
+
+function finishOrder(){
+    axios.delete('http://localhost:8008/ies/cart').then((res) => {
+        alert(res.data)
+        window.location.href = 'http://127.0.0.1:5500/public/home.html'
     })
 }
 
 getCart()
-
-function deleteFromCart(event){
-    axios.delete(`http://localhost:8008/ies/cart/${event.target.id.split('-')[1]}`).then((res) => {
-        getCart()
-    })
-}

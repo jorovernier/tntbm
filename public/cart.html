@@ -18,23 +18,21 @@
     <header>
         <div id="logo-title">
             <img id="logo" src="./images/logo.png"/>
-            <h1>
-                <a id="title-link" href="./home.html">
-                    Totally Not The Black Market
-                </a>
-            </h1>
+            <a id="title-link" href="./home.html">
+                Totally <span id="not">Not</span> The Black Market
+            </a>
         </div>
         <a href="./cart.html" id="to-cart"></a>
     </header>
 
     <section id="full-cart">
         <section id="cart-items"></section>
-        <section id="order-form">
+        <section class="jura" id="order-form">
 
             <div id="totals">
                 <h1 id="cart-total">Cart Total</h1>
-                <p class="inter" id="order-total"></p>
-                <p id="order-tax"></p>
+                <p class="total-tax inter" id="order-total"></p>
+                <p class="total-tax" id="order-tax"></p>
             </div>
 
             <div id="ship-info">
@@ -43,7 +41,7 @@
                 <p id="ship-2">One Day: <span class="inter">9.99</span></p>
             </div>
 
-            <button id="finish">Finish Order</button>
+            <button class="jura" id="finish">Finish Order</button>
 
         </section>
     </section>

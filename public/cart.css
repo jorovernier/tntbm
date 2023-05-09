@@ -42,7 +42,6 @@ body {
 
 .cart-title {
     width: 275px;
-    font-family: 'Jura', sans-serif;
     font-weight: 600;
     font-size: 24px;
 }
@@ -57,19 +56,18 @@ body {
 }
 
 .cart-a-c > p {
-    font-family: 'Jura', sans-serif;
     font-weight: 400;
     font-size: 20px;
 }
 
 .cart-price {
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 28px;
 }
 
 .delete {
-    background-color: red;
+    background-color: #0D1821;
+    color: white;
     width: 20px;
     height: 20px;
     display: none;
@@ -91,7 +89,6 @@ body {
 #order-form {
     background-color:#BFCC94;
     color: #0D1821;
-    font-family: 'Jura', sans-serif;
     width: 250px;
     height: 400px;
     display: flex;
@@ -113,14 +110,14 @@ body {
     margin-bottom: 10px;
 }
 
-#order-total {
+.total-tax {
     font-weight: 400;
     font-size: 24px;
 }
 
-#order-tax {
+#tax-num {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 #ship-info {
@@ -146,18 +143,11 @@ body {
     margin-bottom: 10px;
 }
 
-.inter {
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-}
-
 #finish {
     background-color: #0D1821;
     color: #F0F4EF;
     width: 150px;
     height: 100px;
-    font-family: 'Jura', sans-serif;
     font-size: 32px;
     border-radius: 5px;
     border: 0px;

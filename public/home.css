@@ -36,7 +36,6 @@ body {
 .card-title {
     height: 60px;
     color: white;
-    font-family: 'Jura', sans-serif;
     font-weight: 600;
     font-size: 28px;
     text-align: center;
@@ -53,7 +52,7 @@ body {
     justify-content: space-between;
 }
 
-.item-img {
+#item-img {
     width: 500px;
     height: 500px;
     object-fit: cover;
@@ -61,7 +60,6 @@ body {
 }
 
 #section-section {
-    background-color: #F0F4EF;
     width: 500px;
     height: 500px;
     display: flex;
@@ -72,7 +70,6 @@ body {
 
 #selected-title {
     color: #0D1821;
-    font-family: 'Jura', sans-serif;
     font-weight: 600;
     font-size: 32px;
     text-align: center;
@@ -87,9 +84,8 @@ body {
     justify-content: space-around;
 }
 
-.pee {
+.h2o-just-add-water {
     color: #0D1821;
-    font-family: 'Jura', sans-serif;
     font-weight: 400;
     font-size: 28px;
     text-align: center;
@@ -126,7 +122,6 @@ body {
 
 .option-text {
     color: #0D1821;
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 24px;
     text-align: center;
@@ -135,9 +130,9 @@ body {
 #price {
     height: 30px;
     color: #0D1821;
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 28px;
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -146,7 +141,6 @@ body {
     width: 200px;
     height: 75px;
     color: #0D1821;
-    font-family: 'Jura', sans-serif;
     font-weight: 400;
     font-size: 28px;
     text-align: center;

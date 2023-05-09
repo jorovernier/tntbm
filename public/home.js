@@ -5,11 +5,10 @@ function getItems(){
         for(let i = 0; i < res.data.length; i++){
             let item = res.data[i]
             let itemCard = document.createElement('div')
-            itemCard.setAttribute('id', `item-${item.id}`)
             itemCard.setAttribute('class', `item-card`)
             itemCard.innerHTML = `
                 <img class='card-img' src='${item.imageURL}'/>
-                <h1 class='card-title' id='title-${item.id}'>${item.name}</h1>
+                <h1 class='card-title jura'>${item.name}</h1>
             `
             itemHolder.appendChild(itemCard)
             itemCard.addEventListener('click', () => {
@@ -30,23 +29,23 @@ function renderItemInfo(item){
 
     itemHolder.innerHTML = `
         <div id='clicked-item'>
-            <img class='item-img' src='${imageURL}'/>
+            <img id='item-img' src='${imageURL}'/>
             <section id='section-section'>
-                <h1 id='selected-title'>${name}</h1>
+                <h1 class='jura' id='selected-title'>${name}</h1>
 
-                <section class='size-choice' id='size-section'>
-                    <h2 class='pee'>Size Selection</h2>
+                <section class='size-choice'>
+                    <h2 class='h2o-just-add-water jura'>Size Selection</h2>
                     <div class='options' id='sizes'></div>
                 </section>
 
-                <section class='size-choice' id='choice-section'>
-                    <h2 class='pee'>Choices</h2>
+                <section class='size-choice'>
+                    <h2 class='h2o-just-add-water jura'>Choices</h2>
                     <div class='options' id='choices'></div>
                 </section>
 
-                <p id='price'></p>
+                <p class='inter' id='price'></p>
 
-                <button id='add-to-cart'>Add To Cart</button>
+                <button class='jura' id='add-to-cart'>Add To Cart</button>
 
             </section>
         </div>
@@ -57,10 +56,9 @@ function renderItemInfo(item){
         let keyName = Object.keys(amounts[i])
 
         let amount = document.createElement('div')
-        amount.setAttribute('id', `${keyName}`)
         amount.setAttribute('class', `option amount`)
         amount.innerHTML = `
-            <p class='option-text'>${keyName}</p>
+            <p class='option-text inter'>${keyName}</p>
         `
 
         document.getElementById('sizes').appendChild(amount)
@@ -95,7 +93,7 @@ function renderItemInfo(item){
         let choice = document.createElement('div')
         choice.setAttribute('class', `option choice`)
         choice.innerHTML = `
-            <p class='option-text'>${choices[i]}</p>
+            <p class='option-text inter'>${choices[i]}</p>
         `
         if(choices[i] === 'White Meat'){
             choice.innerHTML = ''
@@ -137,7 +135,7 @@ function renderItemInfo(item){
 
 function addToCart(item){
     console.log(item)
-    axios.post('http://localhost:8008/ies/cart', item).then((res) => {
+    axios.post('http://localhost:8008/ies/cart', item).then(() => {
         window.location.reload()
     })
 }
