@@ -3,10 +3,10 @@
         "id": 1,
         "name": "Completely Normal Fried Chicken",
         "amounts": [
-            {"4": 8.99},
-            {"10": 12.99},
-            {"16": 18.99},
-            {"20": 24.99}
+            {"4pc": 8.99},
+            {"10pc": 12.99},
+            {"16pc": 18.99},
+            {"20pc": 24.99}
         ],
         "choices": ["White Meat", "Dark Meat"],
         "imageURL": "https://images.unsplash.com/photo-1626082896492-766af4eb6501?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
@@ -15,10 +15,10 @@
         "id": 2,
         "name": "Inconspicuous Sushi",
         "amounts": [
-            {"4": 3.99},
-            {"6": 5.99},
-            {"8": 8.49},
-            {"12": 13.49}
+            {"4pc": 3.99},
+            {"6pc": 5.99},
+            {"8pc": 8.49},
+            {"12pc": 13.49}
         ],
         "choices": ["Cali Roll", "Salmon Roll", "Tuna Roll", "'Meat' Roll"],
         "imageURL": "https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2050&q=80"
@@ -27,10 +27,10 @@
         "id": 3,
         "name": "'Bagel'",
         "amounts": [
-            {"1": 1.49},
-            {"2": 2.99},
-            {"4": 4.49},
-            {"6": 5.99}
+            {"1ct": 1.49},
+            {"2ct": 2.99},
+            {"4ct": 4.49},
+            {"6ct": 5.99}
         ],
         "choices": ["Plain", "Everything", "Blueberry", "Cinnamon Raisin"],
         "imageURL": "https://images.unsplash.com/photo-1610735458851-bf3be7078588?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
@@ -39,10 +39,10 @@
         "id": 4,
         "name": "Decorative Severed Limbs",
         "amounts": [
-            {"1": 7.99},
-            {"2": 14.49},
-            {"4": 24.99},
-            {"10": 48.49}
+            {"1ct": 7.99},
+            {"2ct": 14.49},
+            {"4ct": 24.99},
+            {"10ct": 48.49}
         ],
         "choices": ["Arm", "Leg", "Hand", "Foot"],
         "imageURL": "https://ae01.alicdn.com/kf/H5ff106dcf2974642a9c2176d81abe170a/Halloween-Fake-Scary-Severed-Hand-Broken-Body-Parts-Simulating-Bloody-Organ-Props-for-Halloween-Vampire-Zombie.jpg_640x640.jpg"
@@ -51,10 +51,10 @@
         "id": 5,
         "name": "Regular Hard Candy",
         "amounts": [
-            {"30": 5.99},
-            {"60": 8.49},
-            {"90": 11.99},
-            {"120": 13.49}
+            {"30ct": 5.99},
+            {"60ct": 8.49},
+            {"90ct": 11.99},
+            {"120ct": 13.49}
         ],
         "choices": ["White", "Brown", "Blue", "Yellow"],
         "imageURL": "https://images.unsplash.com/photo-1522426197515-ad17e39de88d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2224&q=80"
@@ -85,9 +85,9 @@
     },
     {
         "id": 8,
-        "name": "NOT Haunted Dolls",
+        "name": "Un-Haunted Dolls",
         "amounts": [
-            {"1": 98.49}
+            {"1ct": 98.49}
         ],
         "choices": ["Clown", "Elizabetta", "Princess", "Redhead"],
         "imageURL": "https://images.unsplash.com/photo-1601382583421-cc36fd686342?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=985&q=80"
@@ -96,10 +96,10 @@
         "id": 9,
         "name": "Fun Board Games",
         "amounts": [
-            {"1": 11.99},
-            {"2": 23.49},
-            {"3": 34.99},
-            {"4": 45.49}
+            {"1ct": 11.99},
+            {"2ct": 23.49},
+            {"3ct": 34.99},
+            {"4ct": 45.49}
         ],
         "choices": ["Monopoly", "Clue", "Sorry!", "Luigi"],
         "imageURL": "https://images.unsplash.com/photo-1632501641765-e568d28b0015?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80"

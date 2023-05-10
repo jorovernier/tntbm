@@ -1,3 +1,5 @@
+let executed = false
+
 let cartItems = document.getElementById('cart-items')
 
 function getCart(){
@@ -26,7 +28,7 @@ function getCart(){
                 <h1 class='cart-title jura'>${name}</h1>
 
                 <div class='cart-a-c'>
-                    <p class='jura'>${amount}pcs</p>
+                    <p class='jura'>${amount}</p>
                     <p class='jura'>${choice}</p>
                 </div>
 
@@ -93,10 +95,13 @@ function deleteFromCart(event){
 }
 
 function finishOrder(){
-    axios.delete('http://localhost:8008/ies/cart').then((res) => {
-        alert(res.data)
-        window.location.href = 'http://127.0.0.1:5500/public/home.html'
-    })
+    if(executed === false){
+        executed = true
+        axios.delete('http://localhost:8008/ies/cart').then((res) => {
+            alert(res.data)
+            window.location.href = 'http://127.0.0.1:5500/public/home.html'
+        })
+    }
 }
 
 getCart()
