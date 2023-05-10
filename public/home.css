@@ -1,22 +1,17 @@
-body {
-    background-color: #F0F4EF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #item-holder {
     width: 80vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .item-card {
     background-color: #BFCC94;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,18 +21,19 @@ body {
 }
 
 .card-img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 5px;
     margin-top: 15px;
 }
 
 .card-title {
+    width: 250px;
     height: 60px;
     color: white;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -46,7 +42,7 @@ body {
 
 #clicked-item {
     width: 80vw;
-    height: 85vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: space-between;

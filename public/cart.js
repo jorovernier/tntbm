@@ -6,6 +6,12 @@ function getCart(){
     axios.get('http://localhost:8008/ies/cart').then((res) => {
         let orderTotal = 0;
 
+        if(res.data.length < 1){
+            cartItems.innerHTML = `
+                <p class='jura' id='empty-cart'>Add some items to your cart!</p>
+            `
+        }
+
         for(let i = 0; i < res.data.length; i++){
             let {name, amount, choice, imageURL, price} = res.data[i]
             orderTotal += price
@@ -50,7 +56,7 @@ function getCart(){
 
         let oneDay = document.getElementById('ship-2')
         oneDay.addEventListener('click', () => {
-            if(oneDay.attributes.selected === undefined && cartItems.childElementCount > 0){
+            if(oneDay.attributes.selected === undefined && res.data.length > 0){
                 oneDay.setAttribute('selected', true)
                 let toAdd = +totalElem.textContent
                 toAdd += 9.99
@@ -60,7 +66,7 @@ function getCart(){
 
         let econ = document.getElementById('ship-1')
         econ.addEventListener('click', () => {
-            if(oneDay.attributes.selected && cartItems.childElementCount > 0){
+            if(oneDay.attributes.selected && res.data.length > 0){
                 oneDay.removeAttribute('selected')
                 let toSub = +totalElem.textContent
                 toSub -= 9.99
@@ -70,7 +76,7 @@ function getCart(){
 
         let orderBtn = document.getElementById('finish')
         orderBtn.addEventListener('click', () => {
-            if(cartItems.childElementCount > 0){
+            if(res.data.length > 0){
                 finishOrder()
             } else {
                 alert('Please add items to your cart.')
